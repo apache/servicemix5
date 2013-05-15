@@ -72,6 +72,14 @@
         <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/${commons-httpclient.bundle.version}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-jaxws-blueprint/${version}</bundle>
     </feature>
+    <feature name="examples-camel-sql-derby" version="${version}" resolver="(obr)">
+        <feature version="${camel.version}">camel-sql</feature>
+        <feature version="${camel.version}">camel-jms</feature>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-dbcp/${commons-dbcp.bundle.version}</bundle>
+        <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.derby/${derby.bundle.version}</bundle>
+        <bundle>mvn:org.apache.servicemix.examples/camel-sql-derby-datasource/${version}</bundle>
+        <bundle>mvn:org.apache.servicemix.examples/camel-sql-derby-orders/${version}</bundle>
+    </feature>
     <feature name="examples-camel-osgi" version="${version}" resolver="(obr)">
         <feature version="${camel.version}">camel</feature>
         <bundle>mvn:org.apache.servicemix.examples/camel-osgi/${version}</bundle>
