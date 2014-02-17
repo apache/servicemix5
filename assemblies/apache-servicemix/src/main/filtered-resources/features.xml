@@ -46,7 +46,7 @@
     </feature>
     <feature name="examples-cxf-osgi" version="${version}" resolver="(obr)">
         <feature version="${cxf.version}">cxf</feature>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle dependency="true">mvn:commons-io/commons-io/${commons-io.version}</bundle>
         <bundle dependency="true">mvn:org.springframework/org.springframework.beans/${spring.version}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-osgi/${version}</bundle>
@@ -119,25 +119,25 @@
     </feature>
     <feature name="examples-cxf-ws-addressing" version="${version}" resolver="(obr)">
         <feature version="${cxf.version}">cxf</feature>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle dependency="true">mvn:org.springframework/org.springframework.beans/${spring.version}</bundle>
         <bundle dependency="true">mvn:commons-io/commons-io/${commons-io.version}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-ws-addressing/${version}</bundle>
     </feature>
     <feature name="examples-cxf-ws-security-osgi" version="${version}" resolver="(obr)">
         <feature version="${cxf.version}">cxf</feature>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle dependency="true">mvn:org.springframework/org.springframework.beans/${spring.version}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-ws-security-osgi/${version}</bundle>
     </feature>
     <feature name="examples-cxf-ws-security-blueprint" version="${version}" resolver="(obr)">
         <feature version="${cxf.version}">cxf</feature>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-ws-security-blueprint/${version}</bundle>
     </feature>
     <feature name="examples-cxf-ws-security-signature" version="${version}" resolver="(obr)">
         <feature version="${cxf.version}">cxf</feature>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jbi-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle dependency="true">mvn:org.springframework/org.springframework.beans/${spring.version}</bundle>
         <bundle dependency="true">mvn:commons-io/commons-io/${commons-io.version}</bundle>
         <bundle>mvn:org.apache.servicemix.examples/cxf-ws-security-signature/${version}</bundle>
@@ -183,7 +183,7 @@
         <feature version="${camel.version}">camel</feature>
         <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.wsdl4j/${wsdl4j.bundle.version}</bundle>
         <bundle dependency="true">mvn:org.mybatis/mybatis/${mybatis.version}/</bundle>
-        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.scripting-api-1.0/${servicemix.specs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.scripting-api-1.0/${servicemix.specs.version.added}</bundle>
         <bundle dependency="true">mvn:commons-lang/commons-lang/${commons-lang.version}</bundle>
         <bundle dependency="true">mvn:com.h2database/h2/${h2.version}</bundle>
         <bundle>mvn:org.activiti/activiti-engine/${activiti.version}</bundle>
@@ -208,7 +208,7 @@
 
     <!-- workaround before SM-2179 get addressed on CXF side-->
     <feature name="jaxrs-api">
-        <bundle start-level='10'>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr339-api-m10/${servicemix.specs.version}</bundle>
+        <bundle start-level='10'>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr339-api-m10/${servicemix.specs.version.added}</bundle>
     </feature>
     <feature name="swagger" version="${version}" resolver="(obr)">
         <bundle dependency='true'>mvn:org.scala-lang/scala-library/${scala.version}</bundle>
